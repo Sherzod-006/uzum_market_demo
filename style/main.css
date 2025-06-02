@@ -20,45 +20,54 @@ a {
     color: #333;
 }
 
+img {
+    max-width: 200px;
+    height: auto;
+}
+
 /* For desktop views */
-/* Top navbar */
-.topNav {
-    background-color: rgb(209, 220, 230);
-    font-weight: 400;
-    font-size: 1 rem;
+@media (min-width: 1024px) {
+
+    /* Top navbar */
+    .topNav {
+        background-color: rgb(209, 220, 230);
+        font-weight: 400;
+        font-size: 1 rem;
+    }
+
+    .topNav section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .topNav section button {
+        background: none;
+        border: none;
+        font-size: 0.9rem;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .topNav section .right a {
+        color: #7000ff;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .topNav section select {
+        border: none;
+        background: none;
+    }
+
+    .container {
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-.topNav section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.topNav section button {
-    background: none;
-    border: none;
-    font-size: 0.9rem;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.topNav section .right a {
-    color: #7000ff;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.topNav section select {
-    border: none;
-    background: none;
-}
-
-.container {
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 
 
@@ -73,6 +82,7 @@ a {
 
     .container {
         width: 90%;
+        margin: 0 auto;
         background-color: rgb(8, 25, 83);
     }
 }
