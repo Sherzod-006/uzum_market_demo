@@ -1,0 +1,27 @@
+/* For desktop views */
+.container {
+    background-color: aqua;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/* For tablet views  */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        background-color: rgb(8, 25, 83);
+    }
+}
+
+/* For mobile views */
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+        background-color: lightcoral;
+    }
+}
