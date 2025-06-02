@@ -1,6 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* Base font size */
+}
+
+body {
+    font-family: Inter, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
 /* For desktop views */
+/* Top navbar */
+.topNav {
+    background-color: rgb(209, 220, 230);
+    font-weight: 400;
+    font-size: 1 rem;
+}
+
+.topNav section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.topNav section button {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.topNav section .right a {
+    color: #7000ff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.topNav section select {
+    border: none;
+    background: none;
+}
+
 .container {
-    background-color: aqua;
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
@@ -11,6 +65,12 @@
 
 /* For tablet views  */
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Top navbar */
+    .topNav {
+        display: none;
+    }
+
     .container {
         width: 90%;
         background-color: rgb(8, 25, 83);
@@ -19,6 +79,12 @@
 
 /* For mobile views */
 @media (max-width: 767px) {
+
+    /* Top navbar */
+    .topNav {
+        display: none;
+    }
+
     .container {
         width: 95%;
         padding: 10px;
