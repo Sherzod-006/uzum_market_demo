@@ -61,6 +61,74 @@ img {
         background: none;
     }
 
+    /* Header Section */
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .header .list {
+        border: none;
+        font-size: 1rem;
+        color: #7000ff;
+        background-color: #dedbe9;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        margin: 0 20px;
+    }
+
+    .header .list:hover {
+        background-color: #a365f6;
+        color: #dedbe9;
+    }
+
+    .header .search {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .search input {
+        font-size: 1rem;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-width: 1px;
+        border-color: #a365f6;
+        padding: 10px 20px;
+        width: 30rem;
+    }
+
+    .header .search input:focus {
+        outline: none;
+        border-color: #7000ff;
+    }
+
+    .header .search button {
+        background-color: #dedbe9;
+        color: #7000ff;
+        font-size: 1rem;
+        border: 1px solid #7000ff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .header .user {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+
+    .header .user:hover {
+        background-color: #dedbe9;
+        border-radius: 5px;
+    }
+
     .container {
         max-width: 1250px;
         width: 100%;
@@ -85,6 +153,10 @@ img {
         margin: 0 auto;
         background-color: rgb(8, 25, 83);
     }
+
+    /* Header Section */
+
+
 }
 
 /* For mobile views */
